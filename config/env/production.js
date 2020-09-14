@@ -118,7 +118,8 @@ module.exports = {
   *                                                                         *
   ***************************************************************************/
   blueprints: {
-    shortcuts: false,
+    // shortcuts: false,
+    // All blueprint setting setup in the blueprint.js for setup in all environment
   },
 
 

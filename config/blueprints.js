@@ -38,4 +38,9 @@ module.exports.blueprints = {
 
   // shortcuts: true,
 
+  // Disable blueprint
+  actions: false,
+  rest: false,
+  shortcuts: false,
+
 };
