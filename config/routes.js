@@ -11,5 +11,6 @@
 module.exports.routes = {
 
   'GET /' : 'HalloController.hallo',
+  'POST /user' : 'user/add',
 
 };
