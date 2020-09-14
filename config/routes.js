@@ -10,5 +10,6 @@
 
 module.exports.routes = {
 
+  'GET /' : 'HalloController.hallo',
 
 };
