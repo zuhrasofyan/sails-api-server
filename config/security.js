@@ -33,6 +33,13 @@ module.exports.security = {
   //   allowOrigins: '*',
   //   allowCredentials: false,
   // },
+  cors: {
+    allRoutes: true,
+    allowOrigins: '*',
+    allowCredentials: false,
+    allowRequestMethods: 'GET, POST, PUT, PATCH, DELETE, OPTIONS, HEAD',
+    allowRequestHeaders: 'content-type, Authorization'
+  }
 
 
   /****************************************************************************
