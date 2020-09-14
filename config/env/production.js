@@ -47,6 +47,11 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     default: {
+
+      // change these two lines to reflect your production server
+      adapter: 'sails-mysql',
+      // url: 'mysql://user:password@host:port/database',
+      url: 'mysql://sails_api_server:sails_api_server@localhost:3306/sails_api_server',
       // adapter: 'sails-mysql',
       // url: 'mysql://user:password@host:port/database',
       //--------------------------------------------------------------------------
