@@ -18,5 +18,10 @@ module.exports.policies = {
   ***************************************************************************/
 
   // '*': true,
+  '*': false,
+  HalloController: {
+    hallo: true,
+  },
+  'user/add' : true,
 
 };
