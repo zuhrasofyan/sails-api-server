@@ -7,6 +7,6 @@
     "sails-generate": "1.16.13"
   },
   "hooks": {
-    "grunt": false
+    "session": false
   }
 }
