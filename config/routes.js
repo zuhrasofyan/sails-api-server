@@ -12,5 +12,6 @@ module.exports.routes = {
 
   'GET /' : 'HalloController.hallo',
   'POST /user' : 'user/add',
+  'GET /user/all' : 'user/show-all',
 
 };

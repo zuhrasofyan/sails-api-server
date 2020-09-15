@@ -23,5 +23,6 @@ module.exports.policies = {
     hallo: true,
   },
   'user/add' : true,
+  'user/show-all' : true,
 
 };
