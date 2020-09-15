@@ -4,6 +4,7 @@
  * @description :: Server-side actions for handling incoming requests.
  * @help        :: See https://sailsjs.com/docs/concepts/actions
  */
+const EmailValidator = require('email-validator');
 
 module.exports = {
 
@@ -46,7 +47,12 @@ module.exports = {
     if (inputs.password !== inputs.passwordConfirmation) {
       return exits.badRequest({errors: ['Password mismatch']});
     }
+
     try {
+      const email = await EmailValidator.validate(inputs.email);
+      if (email === false) {
+        return exits.badRequest({errors: ['Email invalid']});
+      }
       const user = await User.create({email: inputs.email, password: inputs.password});
       return exits.success(user);
     } catch(error) {
