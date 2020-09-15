@@ -24,5 +24,9 @@ module.exports.policies = {
   },
   'user/add' : true,
   'user/show-all' : true,
+  AuthController: {
+    login: true,
+    logout: true
+  },
 
 };

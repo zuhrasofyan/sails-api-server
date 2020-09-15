@@ -11,6 +11,10 @@
 module.exports.routes = {
 
   'GET /' : 'HalloController.hallo',
+
+  'POST /auth/login' : 'AuthController.login',
+  'GET /auth/logout' : 'AuthController.logout',
+
   'POST /user' : 'user/add',
   'GET /user/all' : 'user/show-all',
 
