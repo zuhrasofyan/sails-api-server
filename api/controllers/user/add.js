@@ -1,7 +1,7 @@
 /**
- * UserController
+ * AddUserController
  *
- * @description :: Server-side actions for handling incoming requests.
+ * @description :: Server-side actions for handling registering new user.
  * @help        :: See https://sailsjs.com/docs/concepts/actions
  */
 const EmailValidator = require('email-validator');
@@ -53,7 +53,7 @@ module.exports = {
       if (email === false) {
         return exits.badRequest({errors: ['Email invalid']});
       }
-      const user = await User.create({email: inputs.email, password: inputs.password});
+      const user = await User.create({email: inputs.email, username: inputs.email, password: inputs.password});
       return exits.success(user);
     } catch(error) {
       return exits.badRequest(error);
